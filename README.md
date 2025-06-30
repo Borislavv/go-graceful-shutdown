@@ -1,5 +1,7 @@
 ## Golang graceful shutdown
 
+Lightweight Go library for graceful shutdown management. Provides a simple wrapper around WaitGroup with an easy-to-use API for managing main tasks and ensuring clean, predictable app termination. Perfect for microservices, workers, or any server that needs to handle shutdown signals properly without dropping tasks mid-flight.
+
 ### Usage: 
     ctx, cancel := context.WithCancel(context.Background())
 	gsh := shutdown.NewGraceful(ctx, cancel)
